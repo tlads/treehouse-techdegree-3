@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+main,
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: rgb(30, 49, 59);
+}
+
+main {
+    padding: 0 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: rgb(30, 49, 59);
+}
+
+#intro {
+    color: rgb(129, 129, 129);
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 10 auto;
+    display: inline-block;
+    
+}
+
+.intro-wrapper {
+    text-align: center;
+    border-bottom: 6px solid  rgb(83, 83, 83);
+    max-width: 382.5px;
+    margin-bottom: 5px;
+}
+
+#fieldset1 {
+    border-bottom: 3px solid  rgb(83, 83, 83);
+}
+
+#copyright {
+    color: rgb(129, 129, 129);
+    font-style: italic;
+    font-size: .9em;
+}
+
+/*----- form -----*/
+
+form {
+    border-top: 3px solid  rgb(83, 83, 83);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: inline-block;
+    margin: 0;
+    color: rgb(129, 129, 129)
+    
+}
+
+input,
+select {
+    height: 44px;
+    background-color: rgb(243, 242, 242);
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;    
+}
+
+input[type=radio] {
+    width: auto;
+    display: inline-block;
+    margin: 10px 5px;
+    height: auto;
+}
+
+legend {
+    margin: 10px 0;
+    color: rgb(134, 134, 134);
+}
+
+input:focus,
+select:focus {
+    border: 2px solid rgb(30, 49, 59);
+}
+
+select {
+    color: rgb(134, 134, 134);
+    font-size: .8em;
+}
+
+textarea {
+    background-color: rgb(243, 242, 242);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 125px;
+    margin: 10px auto;
+    display: block;
+    resize: none;
+}
+
+#otherlabel {
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    background-color: rgb(35, 175, 168);
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    height: 80px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(158, 235, 231);
+    color: rgb(10, 61, 59);
+    transition: .5s;
+}
+
+#zip {
+    display: block;
+    max-width: 200px;
+}
+
+/*-----pseudo-----*/
+
+::placeholder {
+    text-align: right;
+    font-size: .8em;
+    font-style: italic;
+    color: rgb(134, 134, 134);  
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .intro-wrapper,
+    form {
+        width: 700px;
+        max-width: 700px;
+    }
+
+    .intro-wrapper {
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        margin: 30px 0;
+    }
+
+    fieldset {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    label, input {
+        
+        height: auto;
+    }
+
+    input,
+    select {
+        width: 75%;
+    }
+
+    label {
+        width: 25%;
+    }
+
+    #zip {
+        display: flex;
+        
+        justify-self: start;
+        
+    }
+
+    input[type=submit] {
+        background-color: rgb(35, 175, 168);
+        color: white;
+        text-align: center;
+        font-size: 1.25em;
+        height: 80px;
+        width: 100%;
+    }
+
+    #otherlabel {
+        flex: 1 auto;
+        width: 100%;
+        
+    }
+
+    .radio-label {
+        width:95%;
+    }
+}
+
+
