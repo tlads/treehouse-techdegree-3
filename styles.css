@@ -126,6 +126,7 @@ textarea {
     margin: 10px auto;
     display: block;
     resize: none;
+    border: 2px solid transparent;
 }
 
 #otherlabel {
