@@ -15,7 +15,7 @@
             <p id="intro">Get the latest news on how your code is doing right in your inbox</p>
         </div>
         <form>
-            <h2>Contact Information</h2>
+            
             <fieldset id="fieldset1">
                 <legend id="contact-legend">Contact Information</legend>
                 <label for="full-name">Full Name</label>
@@ -31,7 +31,7 @@
                 <input type="text" id="address1" name="address1"><br/>
 
                 <label for="city">City</label>
-                <input type="text" id="City" name="city"><br/>
+                <input type="text" id="city" name="city"><br/>
 
                 <label for="state">State</label>
                 <select id="state" name="state">
@@ -93,22 +93,20 @@
                 <input type="text" id="zip" name="zip" placeholder="6 digits">
 
             </fieldset>
-
-            <h2>Newsletter</h2>
-
             <fieldset>
-                <legend>Select the newsletters you would like to receive</legend>
-                <input type="radio" id="HTML-news" name="newsletter-type">
+                <legend>Newsletter</legend>
+                <p class="block">Select the newsletters you would like to receive</p>
+                <input type="checkbox" id="HTML-news" name="newsletter-type">
                 <label for="HTML-news" class="radio-label">HTML News</label><br/>
 
-                <input type="radio" id="CSS-news" name="newsletter-type">
+                <input type="checkbox" id="CSS-news" name="newsletter-type">
                 <label for="CSS-news" class="radio-label">CSS News</label><br/>
 
-                <input type="radio" id="Javascript-news" name="newsletter-type">
+                <input type="checkbox" id="Javascript-news" name="newsletter-type">
                 <label for="Javascript-news" class="radio-label">Javascript News</label>
             </fieldset>
             <fieldset>
-                <legend>Newsletter format</legend>
+                <p class="block">Newsletter format</p>
                 <input type="radio" id="HTML" name="newsletter-format">
                 <label for="HTML" class="radio-label">HTML</label><br/>
 
